@@ -3,3 +3,6 @@
 
 ### Code Climate status:
 <a href="https://codeclimate.com/github/lastpatrol/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/bceda847b6bccfef1527/maintainability" /></a>
+
+### Installation and Brain-Even gameplay
+[![asciicast](https://asciinema.org/a/xUSBUXPzRJFEQyolQ1REsnENx.svg)](https://asciinema.org/a/xUSBUXPzRJFEQyolQ1REsnENx)

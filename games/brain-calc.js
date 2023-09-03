@@ -1,6 +1,6 @@
-const objective = 'What is the result of the expression?';
+import getRandom from '../src/utils.js';
 
-const getRandom = (max) => Math.floor(Math.random() * max);
+const objective = 'What is the result of the expression?';
 
 const generateQuestion = () => {
   const maxNum = 100;

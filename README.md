@@ -6,3 +6,6 @@
 
 ### Installation and Brain-Even gameplay
 [![asciicast](https://asciinema.org/a/xUSBUXPzRJFEQyolQ1REsnENx.svg)](https://asciinema.org/a/xUSBUXPzRJFEQyolQ1REsnENx)
+
+## "Greatest Common Divisor" game
+[![asciicast](https://asciinema.org/a/TGqQ1L3fkD7mpyFsdDI3FKpQ6.svg)](https://asciinema.org/a/TGqQ1L3fkD7mpyFsdDI3FKpQ6)

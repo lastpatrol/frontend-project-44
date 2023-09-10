@@ -12,3 +12,6 @@
 
 ## "Progression" game
 [![asciicast](https://asciinema.org/a/SKQ3ueQIhYkrSu6Z00088xZaa.svg)](https://asciinema.org/a/SKQ3ueQIhYkrSu6Z00088xZaa)
+
+## "Is Number Prime?" game
+[![asciicast](https://asciinema.org/a/1dmQJmmSSKtNS9IK6aKrd03qV.svg)](https://asciinema.org/a/1dmQJmmSSKtNS9IK6aKrd03qV)

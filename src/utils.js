@@ -1,4 +1,7 @@
-const getRandom = (max) => Math.round(Math.random() * max);
+const getRandom = (max, min = 0) => {
+  const rangeLength = max - min;
+  return Math.round(Math.random() * rangeLength) + min;
+};
 
 const findGcd = (a, b) => {
   if (a === 0 || b === 0) {

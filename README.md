@@ -9,3 +9,6 @@
 
 ## "Greatest Common Divisor" game
 [![asciicast](https://asciinema.org/a/TGqQ1L3fkD7mpyFsdDI3FKpQ6.svg)](https://asciinema.org/a/TGqQ1L3fkD7mpyFsdDI3FKpQ6)
+
+## "Progression" game
+[![asciicast](https://asciinema.org/a/SKQ3ueQIhYkrSu6Z00088xZaa.svg)](https://asciinema.org/a/SKQ3ueQIhYkrSu6Z00088xZaa)

@@ -14,10 +14,12 @@ make install
 npm link
 ```
 
+[![asciicast](https://asciinema.org/a/WppZvSL3LC1s5W8gbOdSWGkk1.svg)](https://asciinema.org/a/WppZvSL3LC1s5W8gbOdSWGkk1)
+
 
 ## Play
 
-### "Is Even" game
+### "Is Even?" game
 
 Is the number even?
 
@@ -61,7 +63,7 @@ brain-progression
 [![asciicast](https://asciinema.org/a/SKQ3ueQIhYkrSu6Z00088xZaa.svg)](https://asciinema.org/a/SKQ3ueQIhYkrSu6Z00088xZaa)
 
 
-### "Is Prime" game
+### "Is Prime?" game
 
 Is the number prime?
 

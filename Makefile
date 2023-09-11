@@ -1,5 +1,5 @@
 install:
-	npm install --only=prod
+	npm install --omit=dev
 install-all:
 	npm ci
 brain-games:

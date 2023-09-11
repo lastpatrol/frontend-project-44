@@ -8,7 +8,7 @@ const generateQuestion = () => {
 
   const operandA = getRandom(maxNum);
   const operandB = getRandom(maxNum);
-  const operatorIndex = getRandom(operators.length);
+  const operatorIndex = getRandom(operators.length - 1);
   const operator = operators[operatorIndex];
   const question = `${operandA} ${operator} ${operandB}`;
   let answerNum;

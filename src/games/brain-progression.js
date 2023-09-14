@@ -1,19 +1,18 @@
-import { getRandomInRange as getRandom } from '../utils.js';
+import getRandom from '../utils.js';
 
 const objective = 'What number is missing in the progression?';
 
 const makeQuestion = () => {
   const placeholder = '..';
-  const maxStartNum = 100;
   const minLength = 5;
   const maxLength = 10;
   const maxStep = 10;
   const minStep = 1;
 
-  const startNum = getRandom(maxStartNum);
-  const length = getRandom(maxLength, minLength);
-  const step = getRandom(maxStep, minStep);
-  const hiddenIndex = getRandom(length - 1);
+  const startNum = getRandom();
+  const length = getRandom(minLength, maxLength);
+  const step = getRandom(minStep, maxStep);
+  const hiddenIndex = getRandom(0, length - 1);
 
   const progression = [];
   let answer;

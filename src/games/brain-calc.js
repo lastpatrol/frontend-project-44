@@ -1,14 +1,13 @@
-import { getRandomInRange as getRandom } from '../utils.js';
+import getRandom from '../utils.js';
 
 const objective = 'What is the result of the expression?';
 
 const generateQuestion = () => {
-  const maxNum = 100;
   const operators = ['+', '-', '*'];
 
-  const operandA = getRandom(maxNum);
-  const operandB = getRandom(maxNum);
-  const operatorIndex = getRandom(operators.length - 1);
+  const operandA = getRandom();
+  const operandB = getRandom();
+  const operatorIndex = getRandom(0, operators.length - 1);
   const operator = operators[operatorIndex];
   const question = `${operandA} ${operator} ${operandB}`;
   let answerNum;

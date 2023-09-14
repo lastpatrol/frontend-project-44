@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/lastpatrol/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/lastpatrol/frontend-project-44/actions)",
+  "description": "This is a set of simple command-line games. It has modular architecture and is easy to extend with new games.",
   "main": "index.js",
   "type": "module",
   "scripts": {

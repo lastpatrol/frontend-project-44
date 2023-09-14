@@ -17,12 +17,12 @@ const playGame = ([objective, generateQuestion]) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-      return 0;
+      return;
     }
   }
 
   console.log(`Congratulations, ${name}!`);
-  return 0;
+  return;
 };
 
 export default playGame;

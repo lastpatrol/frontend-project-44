@@ -22,7 +22,6 @@ const playGame = ([objective, generateQuestion]) => {
   }
 
   console.log(`Congratulations, ${name}!`);
-  return;
 };
 
 export default playGame;

@@ -1,7 +1,4 @@
-const getRandom = (max, min = 0) => {
-  const rangeLength = max - min;
-  return Math.round(Math.random() * rangeLength) + min;
-};
+const getRandomInRange = (min = 0, max = 100) => Math.floor(min + Math.random() * (max - min + 1));
 
 const findGcd = (a, b) => {
   if (a === 0 || b === 0) {
@@ -38,4 +35,4 @@ const isPrime = (num) => {
   return true;
 };
 
-export { getRandom, findGcd, isPrime };
+export { getRandomInRange, findGcd, isPrime };

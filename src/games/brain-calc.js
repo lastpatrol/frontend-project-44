@@ -1,4 +1,4 @@
-import { getRandom } from '../utils.js';
+import { getRandomInRange as getRandom } from '../utils.js';
 
 const objective = 'What is the result of the expression?';
 

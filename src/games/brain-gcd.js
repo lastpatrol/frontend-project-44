@@ -1,4 +1,4 @@
-import { getRandom, findGcd } from '../utils.js';
+import { getRandomInRange as getRandom, findGcd } from '../utils.js';
 
 const objective = 'Find the greatest common divisor of given numbers.';
 

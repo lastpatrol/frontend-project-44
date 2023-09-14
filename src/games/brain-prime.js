@@ -1,4 +1,4 @@
-import { getRandom, isPrime } from '../src/utils.js';
+import { getRandom, isPrime } from '../utils.js';
 
 const objective = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

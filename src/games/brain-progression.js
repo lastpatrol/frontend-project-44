@@ -1,5 +1,14 @@
 import getRandom from '../utils.js';
 
+const makeProgression = (start, step, length) => {
+  const result = [];
+  for (let i = 0; i < length; i += 1) {
+    result.push(start + i * step);
+  }
+
+  return result;
+};
+
 const rules = 'What number is missing in the progression?';
 
 const makeQuestion = () => {
@@ -9,24 +18,14 @@ const makeQuestion = () => {
   const maxStep = 10;
   const minStep = 1;
 
-  const startNum = getRandom();
-  const length = getRandom(minLength, maxLength);
+  const start = getRandom();
   const step = getRandom(minStep, maxStep);
+  const length = getRandom(minLength, maxLength);
   const hiddenIndex = getRandom(0, length - 1);
 
-  const progression = [];
-  let answer;
-  for (let i = 0; i < length; i += 1) {
-    const currentNumAsStr = (startNum + step * i).toString();
-
-    if (i === hiddenIndex) {
-      progression.push(placeholder);
-      answer = currentNumAsStr;
-    } else {
-      progression.push(currentNumAsStr);
-    }
-  }
-
+  const progression = makeProgression(start, step, length);
+  const answer = progression[hiddenIndex].toString();
+  progression[hiddenIndex] = placeholder;
   const question = progression.join(' ');
 
   return [question, answer];

@@ -2,7 +2,7 @@ import getRandom from '../utils.js';
 
 const rules = 'What is the result of the expression?';
 
-const generateQuestion = () => {
+const makeQuestion = () => {
   const operators = ['+', '-', '*'];
 
   const operandA = getRandom();
@@ -29,6 +29,6 @@ const generateQuestion = () => {
   return [question, answer];
 };
 
-const game = [rules, generateQuestion];
+const game = [rules, makeQuestion];
 
 export default game;

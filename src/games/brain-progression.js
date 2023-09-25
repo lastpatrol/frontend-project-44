@@ -1,6 +1,6 @@
 import getRandom from '../utils.js';
 
-const objective = 'What number is missing in the progression?';
+const rules = 'What number is missing in the progression?';
 
 const makeQuestion = () => {
   const placeholder = '..';
@@ -32,6 +32,6 @@ const makeQuestion = () => {
   return [question, answer];
 };
 
-const game = [objective, makeQuestion];
+const game = [rules, makeQuestion];
 
 export default game;

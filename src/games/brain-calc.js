@@ -1,6 +1,6 @@
 import getRandom from '../utils.js';
 
-const objective = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 
 const generateQuestion = () => {
   const operators = ['+', '-', '*'];
@@ -29,6 +29,6 @@ const generateQuestion = () => {
   return [question, answer];
 };
 
-const game = [objective, generateQuestion];
+const game = [rules, generateQuestion];
 
 export default game;

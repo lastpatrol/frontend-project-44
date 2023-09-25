@@ -1,6 +1,6 @@
 import getRandom from '../utils.js';
 
-const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const generateQuestion = () => {
   const questionNum = getRandom();
@@ -8,6 +8,6 @@ const generateQuestion = () => {
   return [questionNum, isEvenAnswer];
 };
 
-const game = [objective, generateQuestion];
+const game = [rules, generateQuestion];
 
 export default game;

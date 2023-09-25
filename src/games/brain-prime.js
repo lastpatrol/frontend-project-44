@@ -20,7 +20,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const objective = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const makeQuestion = () => {
   const num = getRandom();
@@ -29,6 +29,6 @@ const makeQuestion = () => {
   return [question, answer];
 };
 
-const game = [objective, makeQuestion];
+const game = [rules, makeQuestion];
 
 export default game;

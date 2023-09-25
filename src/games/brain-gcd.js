@@ -15,7 +15,7 @@ const findGcd = (a, b) => {
   return devisor;
 };
 
-const objective = 'Find the greatest common divisor of given numbers.';
+const rules = 'Find the greatest common divisor of given numbers.';
 
 const makeQuestion = () => {
   const a = getRandom();
@@ -25,6 +25,6 @@ const makeQuestion = () => {
   return [question, correctAnswer];
 };
 
-const game = [objective, makeQuestion];
+const game = [rules, makeQuestion];
 
 export default game;

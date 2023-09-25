@@ -1,10 +1,12 @@
 import getRandom from '../utils.js';
 
+const isEven = (num) => num % 2 === 0;
+
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const makeQuestion = () => {
   const questionNum = getRandom();
-  const isEvenAnswer = questionNum % 2 === 0 ? 'yes' : 'no';
+  const isEvenAnswer = isEven(questionNum) ? 'yes' : 'no';
   return [questionNum, isEvenAnswer];
 };
 

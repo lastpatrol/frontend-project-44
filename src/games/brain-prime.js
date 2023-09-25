@@ -1,4 +1,5 @@
 import getRandom from '../utils.js';
+import runEngine from '../index.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -22,13 +23,11 @@ const isPrime = (num) => {
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const makeQuestion = () => {
+const makeRound = () => {
   const num = getRandom();
   const question = num.toString();
   const answer = isPrime(num) ? 'yes' : 'no';
   return [question, answer];
 };
 
-const game = [rules, makeQuestion];
-
-export default game;
+export default () => runEngine(rules, makeRound);

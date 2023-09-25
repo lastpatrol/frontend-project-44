@@ -1,4 +1,5 @@
 import getRandom from '../utils.js';
+import runEngine from '../index.js';
 
 const calculate = (num1, num2, operator) => {
   switch (operator) {
@@ -15,7 +16,7 @@ const calculate = (num1, num2, operator) => {
 
 const rules = 'What is the result of the expression?';
 
-const makeQuestion = () => {
+const makeRound = () => {
   const operators = ['+', '-', '*'];
   const num1 = getRandom();
   const num2 = getRandom();
@@ -26,6 +27,4 @@ const makeQuestion = () => {
   return [question, answer];
 };
 
-const game = [rules, makeQuestion];
-
-export default game;
+export default () => runEngine(rules, makeRound);

@@ -1,4 +1,5 @@
 import getRandom from '../utils.js';
+import runEngine from '../index.js';
 
 const makeProgression = (start, step, length) => {
   const result = [];
@@ -11,7 +12,7 @@ const makeProgression = (start, step, length) => {
 
 const rules = 'What number is missing in the progression?';
 
-const makeQuestion = () => {
+const makeRound = () => {
   const placeholder = '..';
   const minLength = 5;
   const maxLength = 10;
@@ -31,6 +32,4 @@ const makeQuestion = () => {
   return [question, answer];
 };
 
-const game = [rules, makeQuestion];
-
-export default game;
+export default () => runEngine(rules, makeRound);

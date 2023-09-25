@@ -1,4 +1,5 @@
 import getRandom from '../utils.js';
+import runEngine from '../index.js';
 
 const findGcd = (a, b) => {
   if (a === 0 || b === 0) {
@@ -17,7 +18,7 @@ const findGcd = (a, b) => {
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const makeQuestion = () => {
+const makeRound = () => {
   const a = getRandom();
   const b = getRandom();
   const correctAnswer = findGcd(a, b).toString();
@@ -25,6 +26,4 @@ const makeQuestion = () => {
   return [question, correctAnswer];
 };
 
-const game = [rules, makeQuestion];
-
-export default game;
+export default () => runEngine(rules, makeRound);
